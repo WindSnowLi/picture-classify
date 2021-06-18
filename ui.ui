@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>1920*1080壁纸分类</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>模型信息：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="modelInfor">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>311</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit
+{
+font: 25 9pt;
+color:rgb(0, 0, 0);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::hover
+{
+font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::disabled
+{
+font: 25 9pt;
+color:rgb(190, 255, 37);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>支持种类：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="modelType">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit
+{
+font: 25 9pt;
+color:rgb(0, 0, 0);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::hover
+{
+font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::disabled
+{
+font: 25 9pt;
+color:rgb(190, 255, 37);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>单次分类数量：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="onlyNumber">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="fromPath">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>380</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit
+{
+font: 25 9pt;
+color:rgb(0, 0, 0);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::hover
+{
+font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::disabled
+{
+font: 25 9pt;
+color:rgb(190, 255, 37);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>数据源路径：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>目标路径：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_selectFromPath">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>380</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color:rgb(158, 184, 255);
+border-style:outset;           
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);    
+font:bold 15px;
+color:rgb(9, 9, 9);     
+padding:6px;                         
+}
+QPushButton:pressed{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover{
+background-color:rgb(187, 223, 255);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>···</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_selectTargetPath">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>450</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color:rgb(158, 184, 255);
+border-style:outset;           
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);    
+font:bold 15px;
+color:rgb(9, 9, 9);     
+padding:6px;                         
+}
+QPushButton:pressed{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover{
+background-color:rgb(187, 223, 255);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>···</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>30</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>运行时信息：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="runtimeInfor">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>90</y>
+     <width>311</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>3</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit
+{
+font: 25 9pt;
+color:rgb(0, 0, 0);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::hover
+{
+font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::disabled
+{
+font: 25 9pt;
+color:rgb(190, 255, 37);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="targetPath">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>450</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit
+{
+font: 25 9pt;
+color:rgb(0, 0, 0);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::hover
+{
+font: 25 9pt &quot;微软雅黑 Light&quot;;
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+QTextEdit::disabled
+{
+font: 25 9pt;
+color:rgb(190, 255, 37);
+border:1px solid rgb(180, 180, 180);
+border-radius: 4px;
+background:transparent;
+border-width:2;
+border-style:outset
+}
+</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_startRun">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>520</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color:rgb(158, 184, 255);
+border-style:outset;           
+border-width:4px;
+border-radius:10px;
+border-color:rgba(255,255,255,30);    
+font:bold 15px;
+color:rgb(9, 9, 9);     
+padding:6px;                         
+}
+QPushButton:pressed{
+background-color:rgba(100,255,100,200);
+border-color:rgba(255,255,255,30);
+border-style:inset;
+color:rgba(0,0,0,100);
+}
+QPushButton:hover{
+background-color:rgb(187, 223, 255);
+border-color:rgba(255,255,255,200);
+color:rgba(0,0,0,200);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>开始分类</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>目录所有层级：</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="recursionPath">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>310</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>递归目录</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
